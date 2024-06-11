@@ -25,6 +25,7 @@ Table "code" {
   "user_id" INT [not null]
   "algorithm" VARCHAR(255) [not null]
   "variation" VARCHAR(255) [not null]
+  "attachments" JSON
   "slug" VARCHAR(255) [not null]
   "code" VARCHAR(255) [not null]
   "created_at" TIMESTAMP [default: `CURRENT_TIMESTAMP`]

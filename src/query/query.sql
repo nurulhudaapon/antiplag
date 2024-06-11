@@ -25,7 +25,7 @@ LEFT JOIN code c ON u.id = c.user_id
 LEFT JOIN code_performance cp ON c.id = cp.code_id
 
 -- create_code:
-INSERT INTO code (user_id, algorithm, variation, code, slug) VALUES (?, ?, ?, ?, ?);
+INSERT INTO code (user_id, algorithm, variation, code, slug, attachments) VALUES (?, ?, ?, ?, ?, ?);
 
 -- get_code_list:
 SELECT
@@ -33,6 +33,7 @@ SELECT
     c.algorithm,
     c.variation,
     c.code,
+    c.attachments,
     cp.time,
     cp.memory,
     u.id AS user_id,

@@ -28,6 +28,11 @@ const webpackRules = (
   /** @type {import('next').NextConfig} */
 const nextConfig = {
     webpack: webpackRules,
+    experimental: {
+      serverActions: {
+        bodySizeLimit: '10mb',
+      },
+    },
 }
 
 module.exports = nextConfig

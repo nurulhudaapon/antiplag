@@ -9,7 +9,7 @@ import { NavBar } from "../components/nav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Waide",
+  title: "AntiPlag",
   description: "An IDE based on Web Assembly",
 };
 

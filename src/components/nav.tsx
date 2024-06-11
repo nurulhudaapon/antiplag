@@ -3,7 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 const ITEMS = {
-  algorithm: "Algorithm",
+  // algorithm: "Algorithm",
   implementations: "All Submissions",
   "new-implementation": "+ New Submission",
 };
@@ -25,7 +25,7 @@ export function NavBar() {
     <nav className="bg-gray-900 border-gray-200 pl-3">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
         <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-          Waide
+          AntiPlag
         </span>
 
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">

@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS code (
     user_id INT NOT NULL,
     algorithm VARCHAR(255) NOT NULL,
     variation VARCHAR(255) NOT NULL,
+    attachments JSON,
     slug VARCHAR(255) NOT NULL,
     code VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
